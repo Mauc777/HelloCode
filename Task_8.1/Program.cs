@@ -17,7 +17,7 @@ while(index < size)
 Console.WriteLine("Конец");
 
 
-
+// не могу отобразить четные числа сука
 
 
 
