@@ -21,5 +21,5 @@ void Method21(string msg , int count)
     }
 }
 //Method21("Привет, Вацок", 4); будет правильнне на ниж.строке!
-Method21(msg: "Привет, Вацок", count: 10);
+Method21(msg: "Привет, Вацок111", count: 10);
 Method21(count: 10, msg: "Привет, Вацок");
