@@ -1,2 +1,4 @@
-﻿int num = int.Parse(Console.ReadLine());
+﻿Console.Clear();
+int num = int.Parse(Console.ReadLine());
 Console.WriteLine (num * num);
+
