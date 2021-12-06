@@ -5,10 +5,9 @@ Console.WriteLine("Введите заданное число от 10 до 99");
 int numberA =int.Parse(Console.ReadLine());
 //Console.WriteLine(numberA);
 
-int count = 1;
+
 int result1 = 0; 
 int result2 = 0;
-int numberB = numberA;
 
     for (int i = 0; i < 1; i++)  
     {
@@ -17,7 +16,7 @@ int numberB = numberA;
     }    
     for (int j = 0; j < 1; j++)
     {
-        result2 = result2 + numberB%10;  //нахождение остатка
+        result2 = result2 + numberA%10;  //нахождение остатка
         Console.WriteLine();
         Console.WriteLine($"остаток от деления на 10 равен = {result2} ");
     }
