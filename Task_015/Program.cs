@@ -9,16 +9,16 @@ double A = double.Parse(Console.ReadLine());
 double B = 7;
 double C = 23;
 
-while (A % B==0)
+while (A % B == 0)
 {
-   Console.WriteLine("число кратно {B} ");
-   break;    
-} 
+    Console.WriteLine("число кратно {B} ");
+    break;
+}
 
-if (A % C ==0)
+if (A % C == 0)
 {
-   Console.WriteLine("Число кратно {C} ");
-   //break;
+    Console.WriteLine("Число кратно {C} ");
+    //break;
 }
 
 
