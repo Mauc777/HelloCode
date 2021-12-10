@@ -1,4 +1,6 @@
-﻿Console.Clear();
+﻿
+//Найти третью цифру числа или сообщить, что её нет
+Console.Clear();
 
 void Find3Num(string NumberA)
 
