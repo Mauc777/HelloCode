@@ -1,5 +1,5 @@
 ﻿//Найти расстояние между точками в пространстве 2D/3D
-
+Console.Clear();
 double Dist (double x, double y, double z)
 
 {
