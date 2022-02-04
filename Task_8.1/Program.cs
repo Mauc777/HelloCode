@@ -24,7 +24,7 @@ int[] Find(int[] ArrayA)
         {
             int Length = ArrayB.Length;
             Array.Resize(ref ArrayB, Length + 1);
-            ArrayA[i] = ArrayB[j];
+            ArrayB[j] = ArrayA[i];
     
             j++;
         }
