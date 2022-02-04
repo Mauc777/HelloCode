@@ -1,24 +1,60 @@
 ﻿//Показать четные числа от 1 до N
-Console.Clear(); 
-int[] mass = {1,2,3,4,5,6,7,8,9};
-int size = 8;
-int index = 0;
+//Показать четные числа от 1 до N
 
-while(index < size)
+int[] FillArray()
+{
+    int[] array = new int[10];
+    for (int i = 0; i < array.Length; i++)
     {
-        if (mass[index] % 2!=0)
-        {
-            Console.WriteLine("Это число ЧЕТНОЕ");
-        }
-        index++;
-    }        
-      
+        array[i] = new Random().Next(0, 20);
+    }
+   
+    return array;
+}
+
+int[] Find(int[] ArrayA)
+{
+    int[] ArrayB = new int[0];
+    int j = 0;
     
-Console.WriteLine("Конец");
 
+    for (int i = 0; i < ArrayA.Length; i++)
+    {
+        if (ArrayA[i] % 2 == 0)
+        {
+            int Length = ArrayB.Length;
+            Array.Resize(ref ArrayB, Length + 1);
+            ArrayA[i] = ArrayB[j];
+    
+            j++;
+        }
+    }
+    return (ArrayB);
+}
 
-// не могу отобразить четные числа сука
-
-
+void PrintArray(int[] ArrayA, int[] ArrayB)
+{
+    Console.Write("[");
+    for (int i = 0; i < ArrayA.Length; i++)
+    {
+        Console.Write(ArrayA[i]);
+       if (i != ArrayA.Length - 1)
+        {
+            Console.Write(",");
+        }
+    }
+Console.Write("] -> [");
+    for (int i = 0; i < ArrayB.Length; i++)
+    {
+        Console.Write(ArrayB[i]);   
+        if (i != ArrayB.Length - 1)
+        {
+            Console.Write(",");
+        }
+    }
+Console.WriteLine("]");
+}
+int []ArrayA=FillArray();
+PrintArray(ArrayA, Find(ArrayA));
 
 
